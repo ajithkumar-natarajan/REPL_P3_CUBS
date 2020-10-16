@@ -3,35 +3,6 @@ import cv2
 import numpy as np
 import json
 
-img = cv2.imread("22.png")
-h, w = img.shape[0:2]
-print(img.shape[0:2])
-# print(type(h))
-# print(type(w))
-
-
-# for i in range(57, 57+101):
-#   # for j in range(58, 58+14):
-#     img[772][i] = 0
-
-# for i in range(57, 57+101):
-#   # for j in range(58, 58+14):
-#     img[786][i] = 0
-
-# img[173][777] = 128
-
-# cv2.imwrite("img.png", img)
-
-for axis, color in [('x', (255, 0, 0)), ('y', (255, 0, 255))]:
-  print(axis)
-  print(color)
-  print("---")
-
-# os.system('python visualize.py 22.json 22.png 22.out.png')
-
-class_to_idx = {'y_axis': {'y_tick_label': 2, 'y_tick_pt': 1, 'y_axis_title': 3, 'background': 0}, 'region': {'plot': 5, 'x_axis': 2, 'background': 0, 'chart_title': 1, 'y_axis': 3, 'legend': 4}, 'legend': {'legend_title': 1, 'legend_label': 2, 'legend_marker': 3, 'background': 0}, 'x_axis': {'x_axis_title': 3, 'background': 0, 'x_tick_pt': 1, 'x_tick_label': 2}, 'plot': {'bars': 2, 'text': 5, 'lines': 3, 'scatter points': 4, 'boxplots': 1, 'background': 0}}
-
-parse_json("22.png", "22.json", class_to_idx)
 
 def get_bbox(x0, y0, h, w, img_h, img_w):
     xmin = float(x0)
@@ -92,3 +63,34 @@ def parse_json(img, gt_path, class_to_idx):
 
     print("Printing GT")
     print(gt)
+
+
+img = cv2.imread("22.png")
+h, w = img.shape[0:2]
+print(img.shape[0:2])
+# print(type(h))
+# print(type(w))
+
+
+# for i in range(57, 57+101):
+#   # for j in range(58, 58+14):
+#     img[772][i] = 0
+
+# for i in range(57, 57+101):
+#   # for j in range(58, 58+14):
+#     img[786][i] = 0
+
+# img[173][777] = 128
+
+# cv2.imwrite("img.png", img)
+
+for axis, color in [('x', (255, 0, 0)), ('y', (255, 0, 255))]:
+  print(axis)
+  print(color)
+  print("---")
+
+# os.system('python visualize.py 22.json 22.png 22.out.png')
+
+class_to_idx = {'y_axis': {'y_tick_label': 2, 'y_tick_pt': 1, 'y_axis_title': 3, 'background': 0}, 'region': {'plot': 5, 'x_axis': 2, 'background': 0, 'chart_title': 1, 'y_axis': 3, 'legend': 4}, 'legend': {'legend_title': 1, 'legend_label': 2, 'legend_marker': 3, 'background': 0}, 'x_axis': {'x_axis_title': 3, 'background': 0, 'x_tick_pt': 1, 'x_tick_label': 2}, 'plot': {'bars': 2, 'text': 5, 'lines': 3, 'scatter points': 4, 'boxplots': 1, 'background': 0}}
+
+parse_json(img, "22.json", class_to_idx)
