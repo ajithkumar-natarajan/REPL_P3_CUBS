@@ -1,0 +1,1667 @@
+{
+    "task1": {
+        "input": {},
+        "name": "Chart Classification",
+        "output": {
+            "chart_type": "Grouped horizontal bar"
+        }
+    },
+    "task2": {
+        "input": {
+            "task1_output": {
+                "chart_type": "Grouped horizontal bar"
+            }
+        },
+        "name": "Text Detection and Recognition",
+        "output": {
+            "text_blocks": [
+                {
+                    "bb": {
+                        "height": 18,
+                        "width": 335,
+                        "x0": 550,
+                        "y0": 15
+                    },
+                    "text": "Pump price for gasoline (US$ per liter) 2"
+                },
+                {
+                    "bb": {
+                        "height": 101,
+                        "width": 14,
+                        "x0": 13,
+                        "y0": 412
+                    },
+                    "text": "Country Name"
+                },
+                {
+                    "bb": {
+                        "height": 14,
+                        "width": 46,
+                        "x0": 694,
+                        "y0": 933
+                    },
+                    "text": "Values"
+                },
+                {
+                    "bb": {
+                        "height": 24,
+                        "width": 17,
+                        "x0": 160,
+                        "y0": 898
+                    },
+                    "text": "0.0"
+                },
+                {
+                    "bb": {
+                        "height": 24,
+                        "width": 17,
+                        "x0": 321,
+                        "y0": 898
+                    },
+                    "text": "0.2"
+                },
+                {
+                    "bb": {
+                        "height": 24,
+                        "width": 17,
+                        "x0": 483,
+                        "y0": 898
+                    },
+                    "text": "0.4"
+                },
+                {
+                    "bb": {
+                        "height": 24,
+                        "width": 17,
+                        "x0": 644,
+                        "y0": 898
+                    },
+                    "text": "0.6"
+                },
+                {
+                    "bb": {
+                        "height": 24,
+                        "width": 17,
+                        "x0": 806,
+                        "y0": 898
+                    },
+                    "text": "0.8"
+                },
+                {
+                    "bb": {
+                        "height": 24,
+                        "width": 17,
+                        "x0": 967,
+                        "y0": 898
+                    },
+                    "text": "1.0"
+                },
+                {
+                    "bb": {
+                        "height": 24,
+                        "width": 17,
+                        "x0": 1129,
+                        "y0": 898
+                    },
+                    "text": "1.2"
+                },
+                {
+                    "bb": {
+                        "height": 14,
+                        "width": 101,
+                        "x0": 57,
+                        "y0": 772
+                    },
+                    "text": "North America"
+                },
+                {
+                    "bb": {
+                        "height": 30,
+                        "width": 79,
+                        "x0": 79,
+                        "y0": 606
+                    },
+                    "text": "East Asia &\nPacific"
+                },
+                {
+                    "bb": {
+                        "height": 30,
+                        "width": 119,
+                        "x0": 38,
+                        "y0": 448
+                    },
+                    "text": "Pre-demographic\ndividend"
+                },
+                {
+                    "bb": {
+                        "height": 14,
+                        "width": 58,
+                        "x0": 99,
+                        "y0": 299
+                    },
+                    "text": "IDA only"
+                },
+                {
+                    "bb": {
+                        "height": 63,
+                        "width": 84,
+                        "x0": 73,
+                        "y0": 117
+                    },
+                    "text": "Europe &\nCentral Asia\n(IDA & IBRD\ncountries)"
+                },
+                {
+                    "bb": {
+                        "height": 14,
+                        "width": 35,
+                        "x0": 905,
+                        "y0": 58
+                    },
+                    "text": "2004"
+                },
+                {
+                    "bb": {
+                        "height": 14,
+                        "width": 35,
+                        "x0": 1006,
+                        "y0": 58
+                    },
+                    "text": "2010"
+                },
+                {
+                    "bb": {
+                        "height": 14,
+                        "width": 35,
+                        "x0": 1108,
+                        "y0": 58
+                    },
+                    "text": "1992"
+                },
+                {
+                    "bb": {
+                        "height": 14,
+                        "width": 35,
+                        "x0": 1210,
+                        "y0": 58
+                    },
+                    "text": "1995"
+                }
+            ]
+        }
+    },
+    "task3": {
+        "input": {
+            "task1_output": {
+                "chart_type": "Grouped horizontal bar"
+            },
+            "task2_output": {
+                "text_blocks": [
+                    {
+                        "bb": {
+                            "height": 18,
+                            "width": 335,
+                            "x0": 550,
+                            "y0": 15
+                        },
+                        "id": 0,
+                        "text": "Pump price for gasoline (US$ per liter) 2"
+                    },
+                    {
+                        "bb": {
+                            "height": 101,
+                            "width": 14,
+                            "x0": 13,
+                            "y0": 412
+                        },
+                        "id": 1,
+                        "text": "Country Name"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 46,
+                            "x0": 694,
+                            "y0": 933
+                        },
+                        "id": 2,
+                        "text": "Values"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 160,
+                            "y0": 898
+                        },
+                        "id": 3,
+                        "text": "0.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 321,
+                            "y0": 898
+                        },
+                        "id": 4,
+                        "text": "0.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 483,
+                            "y0": 898
+                        },
+                        "id": 5,
+                        "text": "0.4"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 644,
+                            "y0": 898
+                        },
+                        "id": 6,
+                        "text": "0.6"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 806,
+                            "y0": 898
+                        },
+                        "id": 7,
+                        "text": "0.8"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 967,
+                            "y0": 898
+                        },
+                        "id": 8,
+                        "text": "1.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 1129,
+                            "y0": 898
+                        },
+                        "id": 9,
+                        "text": "1.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 101,
+                            "x0": 57,
+                            "y0": 772
+                        },
+                        "id": 10,
+                        "text": "North America"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 79,
+                            "x0": 79,
+                            "y0": 606
+                        },
+                        "id": 11,
+                        "text": "East Asia &\nPacific"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 119,
+                            "x0": 38,
+                            "y0": 448
+                        },
+                        "id": 12,
+                        "text": "Pre-demographic\ndividend"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 58,
+                            "x0": 99,
+                            "y0": 299
+                        },
+                        "id": 13,
+                        "text": "IDA only"
+                    },
+                    {
+                        "bb": {
+                            "height": 63,
+                            "width": 84,
+                            "x0": 73,
+                            "y0": 117
+                        },
+                        "id": 14,
+                        "text": "Europe &\nCentral Asia\n(IDA & IBRD\ncountries)"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 905,
+                            "y0": 58
+                        },
+                        "id": 15,
+                        "text": "2004"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1006,
+                            "y0": 58
+                        },
+                        "id": 16,
+                        "text": "2010"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1108,
+                            "y0": 58
+                        },
+                        "id": 17,
+                        "text": "1992"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1210,
+                            "y0": 58
+                        },
+                        "id": 18,
+                        "text": "1995"
+                    }
+                ]
+            }
+        },
+        "name": "Text Role Classification",
+        "output": {
+            "text_roles": [
+                {
+                    "id": 0,
+                    "role": "chart_title"
+                },
+                {
+                    "id": 1,
+                    "role": "axis_title"
+                },
+                {
+                    "id": 2,
+                    "role": "axis_title"
+                },
+                {
+                    "id": 3,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 4,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 5,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 6,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 7,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 8,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 9,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 10,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 11,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 12,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 13,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 14,
+                    "role": "tick_label"
+                },
+                {
+                    "id": 15,
+                    "role": "legend_label"
+                },
+                {
+                    "id": 16,
+                    "role": "legend_label"
+                },
+                {
+                    "id": 17,
+                    "role": "legend_label"
+                },
+                {
+                    "id": 18,
+                    "role": "legend_label"
+                }
+            ]
+        }
+    },
+    "task4": {
+        "input": {
+            "task1_output": {
+                "chart_type": "Grouped horizontal bar"
+            },
+            "task2_output": {
+                "text_blocks": [
+                    {
+                        "bb": {
+                            "height": 18,
+                            "width": 335,
+                            "x0": 550,
+                            "y0": 15
+                        },
+                        "id": 0,
+                        "text": "Pump price for gasoline (US$ per liter) 2"
+                    },
+                    {
+                        "bb": {
+                            "height": 101,
+                            "width": 14,
+                            "x0": 13,
+                            "y0": 412
+                        },
+                        "id": 1,
+                        "text": "Country Name"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 46,
+                            "x0": 694,
+                            "y0": 933
+                        },
+                        "id": 2,
+                        "text": "Values"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 160,
+                            "y0": 898
+                        },
+                        "id": 3,
+                        "text": "0.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 321,
+                            "y0": 898
+                        },
+                        "id": 4,
+                        "text": "0.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 483,
+                            "y0": 898
+                        },
+                        "id": 5,
+                        "text": "0.4"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 644,
+                            "y0": 898
+                        },
+                        "id": 6,
+                        "text": "0.6"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 806,
+                            "y0": 898
+                        },
+                        "id": 7,
+                        "text": "0.8"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 967,
+                            "y0": 898
+                        },
+                        "id": 8,
+                        "text": "1.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 1129,
+                            "y0": 898
+                        },
+                        "id": 9,
+                        "text": "1.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 101,
+                            "x0": 57,
+                            "y0": 772
+                        },
+                        "id": 10,
+                        "text": "North America"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 79,
+                            "x0": 79,
+                            "y0": 606
+                        },
+                        "id": 11,
+                        "text": "East Asia &\nPacific"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 119,
+                            "x0": 38,
+                            "y0": 448
+                        },
+                        "id": 12,
+                        "text": "Pre-demographic\ndividend"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 58,
+                            "x0": 99,
+                            "y0": 299
+                        },
+                        "id": 13,
+                        "text": "IDA only"
+                    },
+                    {
+                        "bb": {
+                            "height": 63,
+                            "width": 84,
+                            "x0": 73,
+                            "y0": 117
+                        },
+                        "id": 14,
+                        "text": "Europe &\nCentral Asia\n(IDA & IBRD\ncountries)"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 905,
+                            "y0": 58
+                        },
+                        "id": 15,
+                        "text": "2004"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1006,
+                            "y0": 58
+                        },
+                        "id": 16,
+                        "text": "2010"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1108,
+                            "y0": 58
+                        },
+                        "id": 17,
+                        "text": "1992"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1210,
+                            "y0": 58
+                        },
+                        "id": 18,
+                        "text": "1995"
+                    }
+                ]
+            }
+        },
+        "name": "Axes Analysis",
+        "output": {
+            "_plot_bb": {
+                "height": 840,
+                "width": 1088,
+                "x0": 173,
+                "y0": 42
+            },
+            "axes": {
+                "x-axis": [
+                    {
+                        "id": 10,
+                        "tick_pt": {
+                            "x": 173,
+                            "y": 777
+                        }
+                    },
+                    {
+                        "id": 11,
+                        "tick_pt": {
+                            "x": 173,
+                            "y": 619
+                        }
+                    },
+                    {
+                        "id": 12,
+                        "tick_pt": {
+                            "x": 173,
+                            "y": 461
+                        }
+                    },
+                    {
+                        "id": 13,
+                        "tick_pt": {
+                            "x": 173,
+                            "y": 303
+                        }
+                    },
+                    {
+                        "id": 14,
+                        "tick_pt": {
+                            "x": 173,
+                            "y": 146
+                        }
+                    }
+                ],
+                "y-axis": [
+                    {
+                        "id": 3,
+                        "tick_pt": {
+                            "x": 176,
+                            "y": 878
+                        }
+                    },
+                    {
+                        "id": 4,
+                        "tick_pt": {
+                            "x": 337,
+                            "y": 878
+                        }
+                    },
+                    {
+                        "id": 5,
+                        "tick_pt": {
+                            "x": 499,
+                            "y": 878
+                        }
+                    },
+                    {
+                        "id": 6,
+                        "tick_pt": {
+                            "x": 660,
+                            "y": 878
+                        }
+                    },
+                    {
+                        "id": 7,
+                        "tick_pt": {
+                            "x": 822,
+                            "y": 878
+                        }
+                    },
+                    {
+                        "id": 8,
+                        "tick_pt": {
+                            "x": 983,
+                            "y": 878
+                        }
+                    },
+                    {
+                        "id": 9,
+                        "tick_pt": {
+                            "x": 1145,
+                            "y": 878
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "task5": {
+        "input": {
+            "task1_output": {
+                "chart_type": "Grouped horizontal bar"
+            },
+            "task2_output": {
+                "text_blocks": [
+                    {
+                        "bb": {
+                            "height": 18,
+                            "width": 335,
+                            "x0": 550,
+                            "y0": 15
+                        },
+                        "id": 0,
+                        "text": "Pump price for gasoline (US$ per liter) 2"
+                    },
+                    {
+                        "bb": {
+                            "height": 101,
+                            "width": 14,
+                            "x0": 13,
+                            "y0": 412
+                        },
+                        "id": 1,
+                        "text": "Country Name"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 46,
+                            "x0": 694,
+                            "y0": 933
+                        },
+                        "id": 2,
+                        "text": "Values"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 160,
+                            "y0": 898
+                        },
+                        "id": 3,
+                        "text": "0.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 321,
+                            "y0": 898
+                        },
+                        "id": 4,
+                        "text": "0.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 483,
+                            "y0": 898
+                        },
+                        "id": 5,
+                        "text": "0.4"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 644,
+                            "y0": 898
+                        },
+                        "id": 6,
+                        "text": "0.6"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 806,
+                            "y0": 898
+                        },
+                        "id": 7,
+                        "text": "0.8"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 967,
+                            "y0": 898
+                        },
+                        "id": 8,
+                        "text": "1.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 1129,
+                            "y0": 898
+                        },
+                        "id": 9,
+                        "text": "1.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 101,
+                            "x0": 57,
+                            "y0": 772
+                        },
+                        "id": 10,
+                        "text": "North America"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 79,
+                            "x0": 79,
+                            "y0": 606
+                        },
+                        "id": 11,
+                        "text": "East Asia &\nPacific"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 119,
+                            "x0": 38,
+                            "y0": 448
+                        },
+                        "id": 12,
+                        "text": "Pre-demographic\ndividend"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 58,
+                            "x0": 99,
+                            "y0": 299
+                        },
+                        "id": 13,
+                        "text": "IDA only"
+                    },
+                    {
+                        "bb": {
+                            "height": 63,
+                            "width": 84,
+                            "x0": 73,
+                            "y0": 117
+                        },
+                        "id": 14,
+                        "text": "Europe &\nCentral Asia\n(IDA & IBRD\ncountries)"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 905,
+                            "y0": 58
+                        },
+                        "id": 15,
+                        "text": "2004"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1006,
+                            "y0": 58
+                        },
+                        "id": 16,
+                        "text": "2010"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1108,
+                            "y0": 58
+                        },
+                        "id": 17,
+                        "text": "1992"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1210,
+                            "y0": 58
+                        },
+                        "id": 18,
+                        "text": "1995"
+                    }
+                ]
+            }
+        },
+        "name": "Legend Analysis",
+        "output": {
+            "legend_pairs": [
+                {
+                    "bb": {
+                        "height": 10,
+                        "width": 28,
+                        "x0": 866,
+                        "y0": 59
+                    },
+                    "id": 15
+                },
+                {
+                    "bb": {
+                        "height": 10,
+                        "width": 28,
+                        "x0": 967,
+                        "y0": 59
+                    },
+                    "id": 16
+                },
+                {
+                    "bb": {
+                        "height": 10,
+                        "width": 28,
+                        "x0": 1069,
+                        "y0": 59
+                    },
+                    "id": 17
+                },
+                {
+                    "bb": {
+                        "height": 10,
+                        "width": 28,
+                        "x0": 1171,
+                        "y0": 59
+                    },
+                    "id": 18
+                }
+            ]
+        }
+    },
+    "task6": {
+        "input": {
+            "task1_output": {
+                "chart_type": "Grouped horizontal bar"
+            },
+            "task2_output": {
+                "text_blocks": [
+                    {
+                        "bb": {
+                            "height": 18,
+                            "width": 335,
+                            "x0": 550,
+                            "y0": 15
+                        },
+                        "id": 0,
+                        "text": "Pump price for gasoline (US$ per liter) 2"
+                    },
+                    {
+                        "bb": {
+                            "height": 101,
+                            "width": 14,
+                            "x0": 13,
+                            "y0": 412
+                        },
+                        "id": 1,
+                        "text": "Country Name"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 46,
+                            "x0": 694,
+                            "y0": 933
+                        },
+                        "id": 2,
+                        "text": "Values"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 160,
+                            "y0": 898
+                        },
+                        "id": 3,
+                        "text": "0.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 321,
+                            "y0": 898
+                        },
+                        "id": 4,
+                        "text": "0.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 483,
+                            "y0": 898
+                        },
+                        "id": 5,
+                        "text": "0.4"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 644,
+                            "y0": 898
+                        },
+                        "id": 6,
+                        "text": "0.6"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 806,
+                            "y0": 898
+                        },
+                        "id": 7,
+                        "text": "0.8"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 967,
+                            "y0": 898
+                        },
+                        "id": 8,
+                        "text": "1.0"
+                    },
+                    {
+                        "bb": {
+                            "height": 24,
+                            "width": 17,
+                            "x0": 1129,
+                            "y0": 898
+                        },
+                        "id": 9,
+                        "text": "1.2"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 101,
+                            "x0": 57,
+                            "y0": 772
+                        },
+                        "id": 10,
+                        "text": "North America"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 79,
+                            "x0": 79,
+                            "y0": 606
+                        },
+                        "id": 11,
+                        "text": "East Asia &\nPacific"
+                    },
+                    {
+                        "bb": {
+                            "height": 30,
+                            "width": 119,
+                            "x0": 38,
+                            "y0": 448
+                        },
+                        "id": 12,
+                        "text": "Pre-demographic\ndividend"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 58,
+                            "x0": 99,
+                            "y0": 299
+                        },
+                        "id": 13,
+                        "text": "IDA only"
+                    },
+                    {
+                        "bb": {
+                            "height": 63,
+                            "width": 84,
+                            "x0": 73,
+                            "y0": 117
+                        },
+                        "id": 14,
+                        "text": "Europe &\nCentral Asia\n(IDA & IBRD\ncountries)"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 905,
+                            "y0": 58
+                        },
+                        "id": 15,
+                        "text": "2004"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1006,
+                            "y0": 58
+                        },
+                        "id": 16,
+                        "text": "2010"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1108,
+                            "y0": 58
+                        },
+                        "id": 17,
+                        "text": "1992"
+                    },
+                    {
+                        "bb": {
+                            "height": 14,
+                            "width": 35,
+                            "x0": 1210,
+                            "y0": 58
+                        },
+                        "id": 18,
+                        "text": "1995"
+                    }
+                ]
+            },
+            "task3_output": {
+                "text_roles": [
+                    {
+                        "id": 0,
+                        "role": "chart_title"
+                    },
+                    {
+                        "id": 1,
+                        "role": "axis_title"
+                    },
+                    {
+                        "id": 2,
+                        "role": "axis_title"
+                    },
+                    {
+                        "id": 3,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 4,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 5,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 6,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 7,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 8,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 9,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 10,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 11,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 12,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 13,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 14,
+                        "role": "tick_label"
+                    },
+                    {
+                        "id": 15,
+                        "role": "legend_label"
+                    },
+                    {
+                        "id": 16,
+                        "role": "legend_label"
+                    },
+                    {
+                        "id": 17,
+                        "role": "legend_label"
+                    },
+                    {
+                        "id": 18,
+                        "role": "legend_label"
+                    }
+                ]
+            },
+            "task4_output": {
+                "_plot_bb": {
+                    "height": 840,
+                    "width": 1088,
+                    "x0": 173,
+                    "y0": 42
+                },
+                "axes": {
+                    "x-axis": [
+                        {
+                            "id": 10,
+                            "tick_pt": {
+                                "x": 173,
+                                "y": 777
+                            }
+                        },
+                        {
+                            "id": 11,
+                            "tick_pt": {
+                                "x": 173,
+                                "y": 619
+                            }
+                        },
+                        {
+                            "id": 12,
+                            "tick_pt": {
+                                "x": 173,
+                                "y": 461
+                            }
+                        },
+                        {
+                            "id": 13,
+                            "tick_pt": {
+                                "x": 173,
+                                "y": 303
+                            }
+                        },
+                        {
+                            "id": 14,
+                            "tick_pt": {
+                                "x": 173,
+                                "y": 146
+                            }
+                        }
+                    ],
+                    "y-axis": [
+                        {
+                            "id": 3,
+                            "tick_pt": {
+                                "x": 176,
+                                "y": 878
+                            }
+                        },
+                        {
+                            "id": 4,
+                            "tick_pt": {
+                                "x": 337,
+                                "y": 878
+                            }
+                        },
+                        {
+                            "id": 5,
+                            "tick_pt": {
+                                "x": 499,
+                                "y": 878
+                            }
+                        },
+                        {
+                            "id": 6,
+                            "tick_pt": {
+                                "x": 660,
+                                "y": 878
+                            }
+                        },
+                        {
+                            "id": 7,
+                            "tick_pt": {
+                                "x": 822,
+                                "y": 878
+                            }
+                        },
+                        {
+                            "id": 8,
+                            "tick_pt": {
+                                "x": 983,
+                                "y": 878
+                            }
+                        },
+                        {
+                            "id": 9,
+                            "tick_pt": {
+                                "x": 1145,
+                                "y": 878
+                            }
+                        }
+                    ]
+                }
+            },
+            "task5_output": {
+                "legend_pairs": [
+                    {
+                        "bb": {
+                            "height": 10,
+                            "width": 28,
+                            "x0": 866,
+                            "y0": 59
+                        },
+                        "id": 15
+                    },
+                    {
+                        "bb": {
+                            "height": 10,
+                            "width": 28,
+                            "x0": 967,
+                            "y0": 59
+                        },
+                        "id": 16
+                    },
+                    {
+                        "bb": {
+                            "height": 10,
+                            "width": 28,
+                            "x0": 1069,
+                            "y0": 59
+                        },
+                        "id": 17
+                    },
+                    {
+                        "bb": {
+                            "height": 10,
+                            "width": 28,
+                            "x0": 1171,
+                            "y0": 59
+                        },
+                        "id": 18
+                    }
+                ]
+            }
+        },
+        "name": "Data Extraction",
+        "output": {
+            "data series": [
+                {
+                    "data": [
+                        {
+                            "x": "North America",
+                            "y": "0.61"
+                        },
+                        {
+                            "x": "East Asia & Pacific",
+                            "y": "0.68"
+                        },
+                        {
+                            "x": "Pre-demographic dividend",
+                            "y": "0.92"
+                        },
+                        {
+                            "x": "IDA only",
+                            "y": "0.8"
+                        },
+                        {
+                            "x": "Europe & Central Asia (IDA & IBRD countries)",
+                            "y": "0.825"
+                        }
+                    ],
+                    "name": "2004"
+                },
+                {
+                    "data": [
+                        {
+                            "x": "North America",
+                            "y": "0.395"
+                        },
+                        {
+                            "x": "East Asia & Pacific",
+                            "y": "0.6678920989043549"
+                        },
+                        {
+                            "x": "Pre-demographic dividend",
+                            "y": "0.7"
+                        },
+                        {
+                            "x": "IDA only",
+                            "y": "0.6668044690809938"
+                        },
+                        {
+                            "x": "Europe & Central Asia (IDA & IBRD countries)",
+                            "y": "0.715"
+                        }
+                    ],
+                    "name": "1992"
+                },
+                {
+                    "data": [
+                        {
+                            "x": "North America",
+                            "y": "0.395"
+                        },
+                        {
+                            "x": "East Asia & Pacific",
+                            "y": "0.4174448381172443"
+                        },
+                        {
+                            "x": "Pre-demographic dividend",
+                            "y": "0.625"
+                        },
+                        {
+                            "x": "IDA only",
+                            "y": "0.6415538292573572"
+                        },
+                        {
+                            "x": "Europe & Central Asia (IDA & IBRD countries)",
+                            "y": "0.555"
+                        }
+                    ],
+                    "name": "1995"
+                },
+                {
+                    "data": [
+                        {
+                            "x": "North America",
+                            "y": "0.985"
+                        },
+                        {
+                            "x": "East Asia & Pacific",
+                            "y": "1.205"
+                        },
+                        {
+                            "x": "Pre-demographic dividend",
+                            "y": "1.275"
+                        },
+                        {
+                            "x": "IDA only",
+                            "y": "1.15"
+                        },
+                        {
+                            "x": "Europe & Central Asia (IDA & IBRD countries)",
+                            "y": "1.21"
+                        }
+                    ],
+                    "name": "2010"
+                }
+            ],
+            "visual elements": {
+                "bars": [
+                    {
+                        "height": 32,
+                        "width": 493,
+                        "x0": 177,
+                        "y0": 809
+                    },
+                    {
+                        "height": 32,
+                        "width": 796,
+                        "x0": 177,
+                        "y0": 778
+                    },
+                    {
+                        "height": 32,
+                        "width": 319,
+                        "x0": 177,
+                        "y0": 746
+                    },
+                    {
+                        "height": 32,
+                        "width": 319,
+                        "x0": 177,
+                        "y0": 714
+                    },
+                    {
+                        "height": 32,
+                        "width": 549,
+                        "x0": 177,
+                        "y0": 651
+                    },
+                    {
+                        "height": 32,
+                        "width": 973,
+                        "x0": 177,
+                        "y0": 620
+                    },
+                    {
+                        "height": 32,
+                        "width": 539,
+                        "x0": 177,
+                        "y0": 588
+                    },
+                    {
+                        "height": 32,
+                        "width": 337,
+                        "x0": 177,
+                        "y0": 557
+                    },
+                    {
+                        "height": 32,
+                        "width": 743,
+                        "x0": 177,
+                        "y0": 494
+                    },
+                    {
+                        "height": 32,
+                        "width": 1030,
+                        "x0": 177,
+                        "y0": 462
+                    },
+                    {
+                        "height": 32,
+                        "width": 565,
+                        "x0": 177,
+                        "y0": 431
+                    },
+                    {
+                        "height": 32,
+                        "width": 505,
+                        "x0": 177,
+                        "y0": 399
+                    },
+                    {
+                        "height": 32,
+                        "width": 646,
+                        "x0": 177,
+                        "y0": 336
+                    },
+                    {
+                        "height": 32,
+                        "width": 929,
+                        "x0": 177,
+                        "y0": 304
+                    },
+                    {
+                        "height": 32,
+                        "width": 539,
+                        "x0": 177,
+                        "y0": 273
+                    },
+                    {
+                        "height": 32,
+                        "width": 518,
+                        "x0": 177,
+                        "y0": 241
+                    },
+                    {
+                        "height": 32,
+                        "width": 666,
+                        "x0": 177,
+                        "y0": 178
+                    },
+                    {
+                        "height": 32,
+                        "width": 977,
+                        "x0": 177,
+                        "y0": 147
+                    },
+                    {
+                        "height": 32,
+                        "width": 577,
+                        "x0": 177,
+                        "y0": 115
+                    },
+                    {
+                        "height": 32,
+                        "width": 448,
+                        "x0": 177,
+                        "y0": 84
+                    }
+                ],
+                "boxplots": [],
+                "lines": [],
+                "scatter points": []
+            }
+        }
+    }
+}
