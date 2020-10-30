@@ -74,53 +74,53 @@ boxplot_mapping = {'median': 0, 'min': 1, 'max': 2, 'first_quartile': 3, 'third_
 #         cv2.line(im, (x,y), p, color, thickness=1)
 
 # task 5
-for obj in in_obj['task5']['output']['legend_pairs']:
-    patch_bb = obj['bb']
-    p1 = (int(patch_bb['x0']), int(patch_bb['y0']))
-    p2 = (int(patch_bb['x0'] + patch_bb['width']), int(patch_bb['y0'] + patch_bb['height']))
-    cv2.rectangle(im, p1, p2, patch_color, thickness=2)
+# for obj in in_obj['task5']['output']['legend_pairs']:
+#     patch_bb = obj['bb']
+#     p1 = (int(patch_bb['x0']), int(patch_bb['y0']))
+#     p2 = (int(patch_bb['x0'] + patch_bb['width']), int(patch_bb['y0'] + patch_bb['height']))
+#     cv2.rectangle(im, p1, p2, patch_color, thickness=2)
 
-    _id = obj['id']
-    label_bb = find_by_id(_id, in_obj['task5']['input']['task2_output']['text_blocks'])['bb']
-    p = (int(label_bb['x0']), int(label_bb['y0']))
+#     _id = obj['id']
+#     label_bb = find_by_id(_id, in_obj['task5']['input']['task2_output']['text_blocks'])['bb']
+#     p = (int(label_bb['x0']), int(label_bb['y0']))
 
-    cv2.line(im, p1, p, patch_connect, thickness=1)
+#     cv2.line(im, p1, p, patch_connect, thickness=1)
 
 # # task 6
-# idx = 0
-# for bb in in_obj['task6']['output']['visual elements']['bars']:
-#     p1 = (int(bb['x0']), int(bb['y0']))
-#     p2 = (int(bb['x0'] + bb['width']), int(bb['y0'] + bb['height']))
-#     color = element_colors[idx % len(element_colors)]
-#     cv2.rectangle(im, p1, p2, color, thickness=2)
-#     idx += 1
+idx = 0
+for bb in in_obj['task6']['output']['visual elements']['bars']:
+    p1 = (int(bb['x0']), int(bb['y0']))
+    p2 = (int(bb['x0'] + bb['width']), int(bb['y0'] + bb['height']))
+    color = element_colors[idx % len(element_colors)]
+    cv2.rectangle(im, p1, p2, color, thickness=2)
+    idx += 1
 
-# for boxplot in in_obj['task6']['output']['visual elements']['boxplots']:
-#     for name, obj in boxplot.items():
-#         color = element_colors[boxplot_mapping[name]]
-#         x = obj['x']
-#         y = obj['y']
-#         bb = obj['_bb']
-#         p1 = (int(bb['x0']), int(bb['y0']))
-#         p2 = (int(bb['x0'] + bb['width']), int(bb['y0'] + bb['height']))
-#         cv2.rectangle(im, p1, p2, color, thickness=1)
-#         cv2.circle(im, (x, y), 3, color, thickness=-1)
+for boxplot in in_obj['task6']['output']['visual elements']['boxplots']:
+    for name, obj in boxplot.items():
+        color = element_colors[boxplot_mapping[name]]
+        x = obj['x']
+        y = obj['y']
+        bb = obj['_bb']
+        p1 = (int(bb['x0']), int(bb['y0']))
+        p2 = (int(bb['x0'] + bb['width']), int(bb['y0'] + bb['height']))
+        cv2.rectangle(im, p1, p2, color, thickness=1)
+        cv2.circle(im, (x, y), 3, color, thickness=-1)
 
-# idx = 0
-# for line in in_obj['task6']['output']['visual elements']['lines']:
-#     for pt in line:
-#         x = pt['x']
-#         y = pt['y']
-#         color = role_colors[idx % len(role_colors)]
-#         cv2.circle(im, (x, y), 2, color, thickness=-1)
-#     idx += 1
+idx = 0
+for line in in_obj['task6']['output']['visual elements']['lines']:
+    for pt in line:
+        x = pt['x']
+        y = pt['y']
+        color = role_colors[idx % len(role_colors)]
+        cv2.circle(im, (x, y), 2, color, thickness=-1)
+    idx += 1
 
-# idx = 0
-# for pt in in_obj['task6']['output']['visual elements']['scatter points']:
-#     x = pt['x']
-#     y = pt['y']
-#     color = element_colors[idx % len(element_colors)]
-#     cv2.circle(im, (x, y), 2, color, thickness=-1)
-#     idx += 1
+idx = 0
+for pt in in_obj['task6']['output']['visual elements']['scatter points']:
+    x = pt['x']
+    y = pt['y']
+    color = element_colors[idx % len(element_colors)]
+    cv2.circle(im, (x, y), 2, color, thickness=-1)
+    idx += 1
 
 cv2.imwrite(out_file, im)

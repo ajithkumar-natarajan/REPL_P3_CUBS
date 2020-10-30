@@ -61,13 +61,61 @@ def parse_json(img, gt_path, class_to_idx):
         gt["y_axis"]["bboxes"].append(bbox)
         gt["y_axis"]["roles"].append(class_to_idx["y_axis"]["y_tick_pt"])
 
+    # Text Roles
+    # print len(text_roles_json), len(text_blocks_json), gt_path
+    text_roles = [None]*len(text_roles_json)
+    for text_role in text_roles_json:
+        bbox_id = int(text_role['id'])
+        try:
+            text_roles[bbox_id] = text_role['role']
+        except:
+            print('********** ' + str(bbox_id) + ', ' + text_role['role']  + ', ' + gt_path)
+
+    # Text Boxes
+    text_bboxes = [None]*len(text_blocks_json)
+    for text_block in text_blocks_json:
+        bbox_id = int(text_block['id'])
+        bbox = text_block['bb']
+        bbox = get_bbox(bbox['x0'], bbox['y0'], bbox['height'], bbox['width'], h, w)
+        text_bboxes[bbox_id] = bbox
+
+    for bbox_id, (role, bbox) in enumerate(zip(text_roles, text_bboxes)):
+        if role == 'chart_title':
+            gt["region"]["roles"].append(class_to_idx["region"][role])
+            gt["region"]["bboxes"].append(bbox)
+        elif role in ('legend_title', 'legend_label'):
+            gt["legend"]["roles"].append(class_to_idx["legend"][role])
+            gt["legend"]["bboxes"].append(bbox)
+        elif role in ('x_tick_label', 'x_axis_title'):
+            gt["x_axis"]["roles"].append(class_to_idx["x_axis"][role])
+            gt["x_axis"]["bboxes"].append(bbox)
+        elif role in ('y_tick_label', 'y_axis_title'):
+            gt["y_axis"]["roles"].append(class_to_idx["y_axis"][role])
+            gt["y_axis"]["bboxes"].append(bbox)
+        else:
+            gt["plot"]["roles"].append(class_to_idx["plot"]["text"])
+            gt["plot"]["bboxes"].append(bbox)
+
+    # Legend Markers
+    for legend_marker in legend_markers_json:
+        bbox = legend_marker['bb']
+        bbox = get_bbox(bbox['x0'], bbox['y0'], bbox['height'], bbox['width'], h, w)
+        gt["legend"]["bboxes"].append(bbox)
+        gt["legend"]["roles"].append(class_to_idx["legend"]['legend_marker'])
+
+    gt["legend"]["bboxes"] = np.array(gt["legend"]["bboxes"])
+    gt["x_axis"]["bboxes"] = np.array(gt["x_axis"]["bboxes"])
+    gt["y_axis"]["bboxes"] = np.array(gt["y_axis"]["bboxes"])
+
     print("Printing GT")
     print(gt)
+    # print("plot_bb_json")
+    # print(plot_bb_json)
 
 
 img = cv2.imread("22.png")
 h, w = img.shape[0:2]
-print(img.shape[0:2])
+# print(img.shape[0:2])
 # print(type(h))
 # print(type(w))
 
@@ -84,12 +132,12 @@ print(img.shape[0:2])
 
 # cv2.imwrite("img.png", img)
 
-for axis, color in [('x', (255, 0, 0)), ('y', (255, 0, 255))]:
-  print(axis)
-  print(color)
-  print("---")
+# for axis, color in [('x', (255, 0, 0)), ('y', (255, 0, 255))]:
+#   print(axis)
+#   print(color)
+#   print("---")
 
-# os.system('python visualize.py 22.json 22.png 22.out.png')
+os.system('python visualize.py 22.json 22.png 22.out.png')
 
 class_to_idx = {'y_axis': {'y_tick_label': 2, 'y_tick_pt': 1, 'y_axis_title': 3, 'background': 0}, 'region': {'plot': 5, 'x_axis': 2, 'background': 0, 'chart_title': 1, 'y_axis': 3, 'legend': 4}, 'legend': {'legend_title': 1, 'legend_label': 2, 'legend_marker': 3, 'background': 0}, 'x_axis': {'x_axis_title': 3, 'background': 0, 'x_tick_pt': 1, 'x_tick_label': 2}, 'plot': {'bars': 2, 'text': 5, 'lines': 3, 'scatter points': 4, 'boxplots': 1, 'background': 0}}
 
